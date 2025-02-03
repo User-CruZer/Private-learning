@@ -41,7 +41,6 @@ let me = {
 let firstCall = "jonas";
 let age = 30;
 
-*/
 
 // Boolean data type:
 true;
@@ -69,3 +68,13 @@ console.log(year);
 console.log(typeof(year));
 
 console.log(typeof null);
+*/
+
+let age = 18;
+age = 19; // mutate or reassigning the variable to change the value of the variable
+
+// const a variable that cannot be changed
+const birthYear = 2006
+// birthYear = 2005
+
+// const job; // a variable of const cannot be changed as well
