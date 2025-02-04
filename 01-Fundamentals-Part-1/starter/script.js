@@ -68,13 +68,28 @@ console.log(year);
 console.log(typeof(year));
 
 console.log(typeof null);
-*/
 
 let age = 18;
-age = 19; // mutate or reassigning the variable to change the value of the variable
+age = 19;
+// we can use this methode to mutate or reassigning the variable to change the value of the variable 
 
 // const a variable that cannot be changed
 const birthYear = 2006
 // birthYear = 2005
 
 // const job; // a variable of const cannot be changed as well
+*/
+
+// Basic operators in JavaScript
+
+const currentAge = 2037
+const ageJonas = currentAge - 1991;
+const ageSarah = currentAge - 2018;
+console.log(ageJonas, ageSarah);
+console.log("Sarah age:", ageSarah);
+
+console.log(ageJonas * 2, ageJonas / 10, 2 **3);
+console.log("warna", "hitam");
+let color = "warna";
+let black = "hitam";
+console.log(color + black);
