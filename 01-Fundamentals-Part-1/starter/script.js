@@ -141,4 +141,24 @@ const BMIJohn = massJohn / (heightJohn * heightJohn);
 console.log(BMIMark);
 console.log(BMIJohn);
 console.log(BMIMark > BMIJohn)
+
+// Strings and template literals:
+const firstName = "Zaki";
+const job = "Freelancer";
+const birthYear = 2006;
+const year = 2025;
+
+const jonas = "i'm  " + firstName + ", a " + (year - birthYear) + " years old " + job + "!";
+console.log(jonas);
+
+const zaki = `i'm ${firstName}, a ${year - birthYear} years old, and i'm a ${job}!`;
+console.log(zaki);
+
+console.log("string with \n\
+multiple \n\
+line");
+
+console.log(`string with
+multiple
+line`)
 */
