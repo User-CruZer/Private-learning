@@ -17,7 +17,7 @@ let firstNamePerson
 // Others:
 let first_name_person
 // constant (a variable that cannot be changed)
-// by using const variables
+// by using const variable declaration
 const PI = 3.1415;
 console.log(typeof(PI));
 
@@ -78,10 +78,10 @@ const birthYear = 2006
 // birthYear = 2005
 
 // const job; // a variable of const cannot be changed as well
-*/
 
 // Basic operators in JavaScript
 
+// Math operator:
 const currentAge = 2037
 const ageJonas = currentAge - 1991;
 const ageSarah = currentAge - 2018;
@@ -89,7 +89,27 @@ console.log(ageJonas, ageSarah);
 console.log("Sarah age:", ageSarah);
 
 console.log(ageJonas * 2, ageJonas / 10, 2 **3);
+
+// ramdom testing:
 console.log("warna", "hitam");
 let color = "warna";
 let black = "hitam";
 console.log(color + black);
+
+
+// Assignment operator:
+let x = 10 + 5; // x = 10 + 5 = 15
+x += 10; // x = x + 10 = 25
+x *= 4; // x = x * 4 = 100
+x ++; // x = x + 1 = 101
+x --; // x = x - 1 = 100
+x --; // x = x - 1 = 99
+console.log(x);
+
+// comparison operators
+console.log(ageJonas > ageSarah);
+console.log(ageJonas < ageSarah);
+console.log(ageJonas >= 18);
+*/
+
+// Operator precedence:
