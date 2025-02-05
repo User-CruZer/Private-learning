@@ -82,9 +82,9 @@ const birthYear = 2006
 // Basic operators in JavaScript
 
 // Math operator:
-const currentAge = 2037
-const ageJonas = currentAge - 1991;
-const ageSarah = currentAge - 2018;
+const now = 2037
+const ageJonas = now - 1991;
+const ageSarah = now - 2018;
 console.log(ageJonas, ageSarah);
 console.log("Sarah age:", ageSarah);
 
@@ -110,6 +110,35 @@ console.log(x);
 console.log(ageJonas > ageSarah);
 console.log(ageJonas < ageSarah);
 console.log(ageJonas >= 18);
-*/
 
 // Operator precedence:
+
+const now = 2037
+const ageJonas = now - 1991;
+const ageSarah = now - 2018;
+console.log(now - 1991 > now - 2018);
+
+console.log(25 - 10 - 5);
+// expected output = 10
+
+let x, y;
+x = y = 25 - 10 -5; // x = y = 10
+console.log(x, y);
+
+const averageAge = (ageJonas + ageSarah) / 2;
+console.log(ageJonas, ageSarah, averageAge);
+
+// Coding Exercise 1: Challenge #1
+
+const massMark = 78;
+const heightMark = 1.69;
+
+const massJohn = 92;
+const heightJohn = 1.95;
+
+const BMIMark = massMark / (heightMark * heightMark);
+const BMIJohn = massJohn / (heightJohn * heightJohn);
+console.log(BMIMark);
+console.log(BMIJohn);
+console.log(BMIMark > BMIJohn)
+*/
