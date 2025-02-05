@@ -162,3 +162,44 @@ console.log(`string with
 multiple
 line`)
 */
+
+const age = 15;
+
+if(age >= 18) {
+    console.log(`sarah can start driving license 😋☝️`);
+} else {
+    const yearsLeft = 18 - age;
+    console.log(`You currently cannot have driver license, You need to wait for ${yearsLeft} more years`);
+}
+
+const birthYear = 2006;
+
+let century;
+if (birthYear <= 2000) {
+    century = 20
+} else {
+    century = 21
+}
+console.log(century);
+
+// Coding Exercise 2: Challenge #2:
+
+const massMark = 78;
+const heightMark = 1.69;
+const massJohn = 92;
+const heightJohn = 1.95;
+
+const BMIMark = massMark / (heightMark * heightMark);
+const BMIJohn = massJohn / (heightJohn * heightJohn);
+console.log(`${BMIMark}
+${BMIJohn}`);
+
+/* Write your code below. Good luck! 🙂 */
+
+// const markBmi = 28.3;
+// const markJohn = 23.9;
+if (BMIMark > BMIJohn) {
+    console.log(`Mark's bmi is higher than john's!`)
+} else {
+    console.log(`john's bmi is higher than Mark's!`)
+}
