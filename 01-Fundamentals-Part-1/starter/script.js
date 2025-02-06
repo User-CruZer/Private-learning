@@ -202,7 +202,6 @@ if (BMIMark > BMIJohn) {
 } else {
     console.log(`john's bmi (${BMIJohn}) is higher than Mark's (${BMIMark})!`)
 }
-*/
 
 // Type Conversion:
 const inputYear = "1991";
@@ -219,3 +218,22 @@ console.log("23" / "2");
 let n = "1" + 1;
 n = n - 1;
 console.log(n);
+*/
+
+// True and falsy value;
+// 5 Falsy values = 0, "", undefined, null. NaN
+
+console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean("Jonas"));
+console.log(Boolean({}));
+console.log(Boolean(""));
+
+
+const money = 12;
+
+if(money) {
+    console.log(`you got ${money}$`);
+} else {
+    console.log("You should get a job!");
+}
