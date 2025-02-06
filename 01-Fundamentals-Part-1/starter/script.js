@@ -161,7 +161,6 @@ line");
 console.log(`string with
 multiple
 line`)
-*/
 
 const age = 15;
 
@@ -194,7 +193,7 @@ const BMIJohn = massJohn / (heightJohn * heightJohn);
 console.log(`${BMIMark}
 ${BMIJohn}`);
 
-/* Write your code below. Good luck! 🙂 */
+//  Write your code below. Good luck! 🙂
 
 // const markBmi = 28.3;
 // const markJohn = 23.9;
@@ -203,3 +202,20 @@ if (BMIMark > BMIJohn) {
 } else {
     console.log(`john's bmi (${BMIJohn}) is higher than Mark's (${BMIMark})!`)
 }
+*/
+
+// Type Conversion:
+const inputYear = "1991";
+console.log(Number(inputYear), inputYear);
+console.log(Number(inputYear) + 18); // -> Convert it into Number
+console.log(Number("Joko")); // NaN: Not a number
+console.log(String(23), 23) // -> Convert it into String
+
+// Type coercion:
+console.log("i am " + 23 + " years old");
+console.log("23" - "10" - 31);
+console.log("23" / "2");
+
+let n = "1" + 1;
+n = n - 1;
+console.log(n);
