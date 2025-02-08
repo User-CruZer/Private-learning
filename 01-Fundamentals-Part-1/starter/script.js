@@ -302,3 +302,49 @@ if (scoreDolphins > scoreKoalas) {
     console.log("both wins win the trophy");
 }
 */
+
+// the switch statement:
+
+const day = "sunday";
+// switch(day) {
+//     case "saturday": // day === "saturday"
+//         console.log("Its saturday");
+//         console.log("Let's study");
+//         break;
+//     case "monday":
+//         console.log("Its monday");
+//         console.log("wakey wakey its time for school");
+//         break;
+//     case "tuesday":
+//         console.log("Its tuesday");
+//         console.log("work");
+//         break
+//     case "wednesday":
+//         console.log("lets walk at the park for 30 - 45 minutes");
+//         console.log("i dont know");
+//         break;
+//     case "friday":
+//         console.log("Dont forget the friday prayer");
+//         break;
+//     case "sunday":
+//         console.log("rest");
+//         break
+//     default:
+//         console.log("invalid days")
+// };
+
+if(day == "monday") {
+    console.log("its monday");
+} else if (day === "tuseday") {
+    console.log("its tuesday");
+} else if (day === "wednesday") {
+    console.log("its wednesday");
+} else if (day === "thursdays") {
+    console.log("its thursday");
+} else if (day === "friday") {
+    console.log("its friday");
+} else if (day === "saturday" || day === "sunday") {
+    console.log("lets take some rest for now");
+} else {
+    console.log("invalid syntax")
+}
