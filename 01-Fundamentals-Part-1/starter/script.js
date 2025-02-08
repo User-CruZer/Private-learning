@@ -218,7 +218,6 @@ console.log("23" / "2");
 let n = "1" + 1;
 n = n - 1;
 console.log(n);
-*/
 
 // True and falsy value;
 // 5 Falsy values = 0, "", undefined, null. NaN
@@ -237,3 +236,69 @@ if(money) {
 } else {
     console.log("You should get a job!");
 }
+
+// equality operators: == vs ===
+
+const age = 18;
+
+// Better to use this:
+if(age === 18) console.log("you will face the reality");
+
+if(age == 18) console.log("get ready for the reality that awaits you");
+
+// const userInput = Number(prompt("insert your favorite number 🗿"));
+
+if(userInput === 0) {
+    console.log("uhh okay?");
+} else if(userInput < 69) {
+    console.log("You sure?");
+} else if(userInput === 69){
+    console.log("Nice!");
+}
+
+if(userInput !== 69) {
+    console.log("not 69?")
+}
+
+// Logical operators 
+
+const hasDriversLicense = true; // A
+const hasGoodVision = true; // B
+
+console.log(hasDriversLicense && hasGoodVision);
+console.log(hasDriversLicense || hasGoodVision);
+console.log(!hasDriversLicense);
+
+const shouldDrive = hasDriversLicense && hasGoodVision;
+
+// if(hasDriversLicense && hasGoodVision) {
+//     console.log("Sarah is able to drive");
+// } else {
+//     console.log("Sarah is recommended to not driving");
+// }
+
+const isTired = true; // C
+console.log(hasDriversLicense && hasGoodVision && isTired);
+
+if(hasDriversLicense && hasGoodVision && !isTired) {
+    console.log("Sarah is able to drive");
+} else {
+    console.log("Sarah is cannot drive");
+}
+
+// Coding Exercise 3: Challenge #3:
+
+// Write your code below. Good luck! 🙂
+
+const scoreDolphins = (96 - 108 + 89) / 3;
+const scoreKoalas = (88 + 91 + 110) / 3;
+console.log(scoreDolphins, scoreKoalas);
+
+if (scoreDolphins > scoreKoalas) {
+    console.log("Dolphins win the trophy");
+} else if (scoreKoalas > scoreDolphins) {
+    console.log("Koalas win the trophy");
+} else if (scoreDolphins === scoreKoalas) {
+    console.log("both wins win the trophy");
+}
+*/
