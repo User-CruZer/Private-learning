@@ -301,37 +301,36 @@ if (scoreDolphins > scoreKoalas) {
 } else if (scoreDolphins === scoreKoalas) {
     console.log("both wins win the trophy");
 }
-*/
 
 // the switch statement:
 
 const day = "sunday";
-// switch(day) {
-//     case "saturday": // day === "saturday"
-//         console.log("Its saturday");
-//         console.log("Let's study");
-//         break;
-//     case "monday":
-//         console.log("Its monday");
-//         console.log("wakey wakey its time for school");
-//         break;
-//     case "tuesday":
-//         console.log("Its tuesday");
-//         console.log("work");
-//         break
-//     case "wednesday":
-//         console.log("lets walk at the park for 30 - 45 minutes");
-//         console.log("i dont know");
-//         break;
-//     case "friday":
-//         console.log("Dont forget the friday prayer");
-//         break;
-//     case "sunday":
-//         console.log("rest");
-//         break
-//     default:
-//         console.log("invalid days")
-// };
+switch(day) {
+    case "saturday": // day === "saturday"
+        console.log("Its saturday");
+        console.log("Let's study");
+        break;
+    case "monday":
+        console.log("Its monday");
+        console.log("wakey wakey its time for school");
+        break;
+    case "tuesday":
+        console.log("Its tuesday");
+        console.log("work");
+        break
+    case "wednesday":
+        console.log("lets walk at the park for 30 - 45 minutes");
+        console.log("i dont know");
+        break;
+    case "friday":
+        console.log("Dont forget the friday prayer");
+        break;
+    case "sunday":
+        console.log("rest");
+        break
+    default:
+        console.log("invalid days")
+};
 
 if(day == "monday") {
     console.log("its monday");
@@ -348,3 +347,22 @@ if(day == "monday") {
 } else {
     console.log("invalid syntax")
 }
+
+// The Conditional (Tenary) operator!
+
+const age = 18;
+age <= 18 ? console.log("I'd like to start my journey") :
+console.log("Stay focus my brother, we must stay focus");
+
+const goal = age < 18 ? "You can play" : "stay focus brother";
+console.log(goal);
+
+let drink2;
+if (age >= 18) {
+    drink2 = "coffee";
+} else {
+    drink2 = "milk";
+}
+console.log(drink2)
+console.log(`i would prefer ${age >= 18 ? "Coffee" : "Milk"} please..`);
+*/
