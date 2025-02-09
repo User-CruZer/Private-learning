@@ -366,3 +366,13 @@ if (age >= 18) {
 console.log(drink2)
 console.log(`i would prefer ${age >= 18 ? "Coffee" : "Milk"} please..`);
 */
+
+const bill = 275;
+
+// Write your code below. Good luck! 🙂 
+
+let tip;
+tip = bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.20;
+console.log(bill);
+console.log(tip);
+console.log(bill + tip);
