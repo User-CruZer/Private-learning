@@ -114,7 +114,6 @@ retirement(1969, "bapak");
 retirement(1999, "ahmad");
 retirement(2006, "zaki");
 retirement(1964, "joko");
-*/
 
 // coding exercise 5:
 const calcAverage = (scores1, scores2, scores3) => (scores1 + scores2 + scores3) / 3;
@@ -133,3 +132,4 @@ const scoreDolphins = calcAverage(44, 23, 71);
 const scoreKoalas = calcAverage(65, 54, 49);
 
 checkWinner(scoreDolphins, scoreKoalas);
+*/
