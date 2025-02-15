@@ -65,7 +65,6 @@ const yearsLeft2 = (birthyear, firstName) => {
     return `${firstName} retires in ${retirement} years left`;
 }
 console.log(yearsLeft2(2006, "Zaki"));
-*/
 
 // function calling another function:
 
@@ -81,3 +80,56 @@ function fruitProcessor(apples, oranges) {
     return juice
 }
 console.log(fruitProcessor(2, 3));
+// reviewing function
+
+// expression function:
+const calcAge = function(birthyear) {
+    return 2025 - birthyear;
+}
+// console.log(calcAge(2006));
+
+function yearsLeftUntilRetirement(birthyear, firstName) {
+    const age = 2025 - birthyear;
+    const retirement = 60 - age;
+
+    return `${firstName} retires in ${retirement} years left`
+}
+
+
+function retirement(birthyear, firstName) {
+    const age = calcAge(birthyear);
+    const retirement = 60 - age;
+
+    if(retirement >= 0 ) {
+        console.log(`${firstName} retires in ${retirement} years left`);
+        return retirement;
+    } else {
+        console.log(`${firstName} has already retired`)
+        return -1;
+    }
+    
+    // return `${firstName} retires in ${retirement} years left`
+}
+retirement(1969, "bapak");
+retirement(1999, "ahmad");
+retirement(2006, "zaki");
+retirement(1964, "joko");
+*/
+
+// coding exercise 5:
+const calcAverage = (scores1, scores2, scores3) => (scores1 + scores2 + scores3) / 3;
+console.log(calcAverage(44, 23, 71));
+function checkWinner(avgDolphins, avgKoalas) {
+    if(avgDolphins >= 2 * avgKoalas) {
+        console.log(`Dolphins wins (${avgDolphins} vs ${avgKoalas})`)
+    } else if (avgKoalas >= 2 * avgDolphins) {
+        console.log(`Koalas wins (${avgKoalas} vs ${avgDolphins})`)
+    } else {
+        console.log("no team wins...")
+    }
+}
+
+const scoreDolphins = calcAverage(44, 23, 71);
+const scoreKoalas = calcAverage(65, 54, 49);
+
+checkWinner(scoreDolphins, scoreKoalas);
