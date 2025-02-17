@@ -133,3 +133,33 @@ const scoreKoalas = calcAverage(65, 54, 49);
 
 checkWinner(scoreDolphins, scoreKoalas);
 */
+
+// understanding arrays:
+
+const friends = ["Ridwan", " Are", " Fitra"];
+console.log(friends);
+
+const years = new Array(1969, 2006, 1999, 2025);
+console.log(years);
+
+console.log(friends.length);
+console.log(friends[friends.length - 1]);
+
+friends[2] = " Kurniati";
+console.log(friends);
+
+const firstName = "zaki";
+const zaki = [firstName, "Bogor", 2025 - 2006, "collegian", `Friends of zaki = ${friends}`];
+console.log(zaki[zaki.length - 1]);
+console.log(zaki);
+
+// exercise:
+function calcAge1(birthyear) {
+    return 2025 - birthyear;
+}
+const age = [2006, 2007, 1999, 1945];
+const ageVar = [calcAge1(age[1]), calcAge1(age[0]), calcAge1(age[2])];
+const ageVar1 = new Array([calcAge1(age[1]), calcAge1(age[0]), calcAge1(age[2])]);
+
+console.log(ageVar);
+console.log(ageVar1);
