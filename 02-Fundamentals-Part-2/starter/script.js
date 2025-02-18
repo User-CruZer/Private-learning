@@ -132,7 +132,6 @@ const scoreDolphins = calcAverage(44, 23, 71);
 const scoreKoalas = calcAverage(65, 54, 49);
 
 checkWinner(scoreDolphins, scoreKoalas);
-*/
 
 // understanding arrays:
 
@@ -163,3 +162,38 @@ const ageVar1 = new Array([calcAge1(age[1]), calcAge1(age[0]), calcAge1(age[2])]
 
 console.log(ageVar);
 console.log(ageVar1);
+
+// Basic array operation methods:
+// Add elements:
+const friends = ["Ridwan", " Are", " Fitra"];
+friends.push("Ramdan"); // Works simillarly as append in python
+friends.unshift("Malik"); // Adding a value to the first index
+console.log(friends);
+
+// Remove elements:
+friends.pop(); // removing the last element from the array
+const popped = friends.pop() // the pop method will return the removed value and we save it inside here!
+console.log(friends);
+console.log(popped);
+
+friends.shift(); // remove the value of the first index
+console.log(friends);
+
+console.log(friends.indexOf("Ridwan"));
+console.log(friends.indexOf("Ramdan"));
+
+console.log(friends.includes("Ridwan"));
+console.log(friends.includes("Ramdan"));
+
+if (friends.includes("Ramdan")) {
+    console.log("you have a friend called ramdan");
+} else {
+    console.log("you dont have friend called ramdan")
+}
+
+if (friends.includes("Ridwan")) {
+    console.log("you have a friend called Ridwan");
+} else {
+    console.log("you dont have friend called Ridwan")
+}
+*/
