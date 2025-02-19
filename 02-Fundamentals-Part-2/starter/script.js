@@ -196,7 +196,6 @@ if (friends.includes("Ridwan")) {
 } else {
     console.log("you dont have friend called Ridwan")
 }
-*/
 
 // Coding exercise 6:
 
@@ -210,3 +209,24 @@ const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
 const totals = [(tips[0] + bills[0]), (bills[1] + tips[1]), (bills[2], + tips[2])];
 
 console.log(totals);
+
+// introduction to objects
+
+// array:
+const zakiArray = [
+    "zaki",
+    "albadri",
+    2025 - 2006,
+    ["ridwan", "fitra", "are", "ramdan"]
+];
+console.log(zakiArray);
+
+// Object:
+const zaki = {
+    firstName: "zaki",
+    lastName: "albadri",
+    age: 2025 - 2006,
+    job: "unemployed",
+    friends: ["ridwan", "fitra", "are", "ramdan"]
+};
+*/
