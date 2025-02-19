@@ -230,3 +230,49 @@ const zaki = {
     friends: ["ridwan", "fitra", "are", "ramdan"]
 };
 */
+
+// Dot vs bracket notation:
+
+const zaki = {
+    firstName: "zaki",
+    lastName: "albadri",
+    age: 2025 - 2006,
+    job: "unemployed",
+    friends: ["ridwan", "fitra", "are", "ramdan"]
+};
+
+console.log(zaki);
+
+console.log(zaki.age);
+console.log(zaki["firstName"]);
+
+const nameKey = "Name";
+console.log(zaki["first" + nameKey]);
+console.log(zaki["last" + nameKey]);
+
+// const interestedIn = prompt("what do you want to know about zaki? Choose between firstName, lastName, age, job, and friends");
+// console.log(zaki[interestedIn]);
+
+
+zaki.location = "Bogor";
+zaki["tiktok"] = "CruzeRx";
+
+// if (zaki[interestedIn]) {
+//     console.log(zaki[interestedIn]);
+// } else {
+//     console.log("wrong request! Choose between firstName, lastName, age, job, and friends");
+// }
+
+console.log(zaki.location);
+console.log(zaki["tiktok"]);
+
+// Challenge
+// jonas has 3 friends, and his best friends is called michael
+
+const jonas = {
+    firstName: "jonas",
+    friends: ["Michael", "Peter", "Steven"],
+    bestFriends: "Michael"
+};
+
+console.log(`${jonas.firstName} has ${jonas.friends.length} friends, and his best friend is called ${jonas.friends[0]}`);
