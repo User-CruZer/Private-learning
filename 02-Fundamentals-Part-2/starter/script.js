@@ -275,7 +275,6 @@ const jonas = {
 };
 
 console.log(`${jonas.firstName} has ${jonas.friends.length} friends, and his best friend is called ${jonas.friends[0]}`);
-*/
 
 // object methods:
 
@@ -317,3 +316,36 @@ console.log(jonas.age);
 // jonas is a 46 year old teacher, and he has a driver's license 
 
 console.log(`${jonas.firstName} is a ${jonas.calcAge()} year old ${jonas.job}, and ${jonas.checkLicense()}`);
+
+*/
+
+// coding exercise 7:
+
+const mark = {
+    fullname: "Mark Miller",
+    mass: 78,
+    height: 1.69,
+    calcBMI: function() {
+        this.bmi = this.mass / (this.height * this.height);
+        return this.bmi;
+    }
+}
+
+const john = {
+    fullname: "John Smith",
+    mass: 92,
+    height: 1.95,
+
+    calcBMI: function() {
+        this.bmi = this.mass / (this.height * this.height);
+        return this.bmi;
+    }
+}
+john.calcBMI();
+mark.calcBMI();
+
+if (john.bmi > mark.bmi) {
+    console.log(`${john.fullname}'s bmi (${john.bmi}) is higher than ${mark.fullname}'s (${mark.bmi})`)
+} else {
+    console.log(`${mark.fullname}'s bmi (${mark.bmi}) is higher than ${john.fullname}'s (${john.bmi})`)
+}
