@@ -317,7 +317,6 @@ console.log(jonas.age);
 
 console.log(`${jonas.firstName} is a ${jonas.calcAge()} year old ${jonas.job}, and ${jonas.checkLicense()}`);
 
-*/
 
 // coding exercise 7:
 
@@ -349,3 +348,29 @@ if (john.bmi > mark.bmi) {
 } else {
     console.log(`${mark.fullname}'s bmi (${mark.bmi}) is higher than ${john.fullname}'s (${john.bmi})`)
 }
+
+// iteration: the for loop:
+
+for(let rep = 1; rep <= 10; rep++) {
+    console.log("rep 1");
+}
+
+for(let rep = 1; rep <= 10; rep++) {
+    console.log(`rep ${rep}`);
+}
+*/
+// looping arrays, breaking, and continuing
+
+const johnsArray = [
+    "jonas",
+    "schmedtman",
+    2037 - 1991,
+    "teacher",
+    ["michael", "peter", "steven"],
+    true
+];
+
+for(let i = 0; i < johnsArray.length ; i++) {
+    console.log(johnsArray[i]);
+};
+console.log(johnsArray.length);

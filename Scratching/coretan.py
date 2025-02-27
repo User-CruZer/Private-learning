@@ -22,3 +22,11 @@ print(f"2. {me}")
 # insert methods:
 me.insert(0, "joko")
 print(f"3. {me}")
+
+# looping in python
+for i in range(4):
+    i = "joko"
+    print(i)
+
+for i in range(5):
+    print(i + 1)
