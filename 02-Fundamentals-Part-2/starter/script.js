@@ -358,7 +358,6 @@ for(let rep = 1; rep <= 10; rep++) {
 for(let rep = 1; rep <= 10; rep++) {
     console.log(`rep ${rep}`);
 }
-*/
 // looping arrays, breaking, and continuing
 
 const johnsArray = [
@@ -400,4 +399,29 @@ for(let i = 0; i < johnsArray.length ; i++) {
     if (typeof johnsArray[i] !== "string") break;
 
     console.log(johnsArray[i], typeof(johnsArray[i]));
+}
+*/
+// looping backwards and loops in loops
+
+const jonas = [
+    "jonas",
+    "schmedtman",
+    2037 - 1991,
+    "teacher",
+    ["michael", "peter", "steven"]
+];
+
+// 0, 1, ... 4
+// 4, 3, ... 0
+
+for(let i = jonas.length - 1; i >= 0; i--) {
+    console.log(i, jonas[i]);
+}
+
+for (let exercise = 1; exercise < 4; exercise++) {
+    console.log(`======= Starting exercise ${exercise}`);
+
+    for (let rep = 1; rep < 6; rep++) {
+        console.log(`Lifting weight reps: ${rep}`);
+    }
 }
