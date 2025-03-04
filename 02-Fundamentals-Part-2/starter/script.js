@@ -424,7 +424,6 @@ for (let exercise = 1; exercise < 4; exercise++) {
         console.log(`Lifting weight reps: ${rep}`);
     }
 }
-*/
 
 console.log("=== For loop ===");
 
@@ -447,3 +446,22 @@ while (dice !== 6) {
     dice = Math.trunc(Math.random() * 6) + 1;
     if(dice === 6) console.log(`you got ${dice}`);
 }
+*/
+
+// coding exercise 8:
+const calcTip = function (bill) {
+    return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+}
+  
+/* Write your code below. Good luck! 🙂 */
+  
+let bill = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+let tips = [];
+let totals = [];
+
+for(let i = 0; i < 10; i++) {
+    tips.push(calcTip(bill[i]));
+    totals.push(tips[i] + bill[i]);
+}
+console.log(tips);
+console.log(totals);
