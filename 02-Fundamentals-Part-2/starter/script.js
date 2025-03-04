@@ -400,7 +400,6 @@ for(let i = 0; i < johnsArray.length ; i++) {
 
     console.log(johnsArray[i], typeof(johnsArray[i]));
 }
-*/
 // looping backwards and loops in loops
 
 const jonas = [
@@ -424,4 +423,27 @@ for (let exercise = 1; exercise < 4; exercise++) {
     for (let rep = 1; rep < 6; rep++) {
         console.log(`Lifting weight reps: ${rep}`);
     }
+}
+*/
+
+console.log("=== For loop ===");
+
+// for(let rep = 1; rep <= 10; rep++) {
+//     console.log(`rep ${rep}`);
+// }
+
+// console.log("=== While loop ===");
+// let rep = 1;
+// while (rep <= 10) {
+//     console.log(`rep ${rep}`);
+//     rep++;
+// }
+
+let dice = Math.trunc(Math.random() * 6) + 1;
+console.log(dice);
+
+while (dice !== 6) {
+    console.log(`you rolled a ${dice}`);
+    dice = Math.trunc(Math.random() * 6) + 1;
+    if(dice === 6) console.log(`you got ${dice}`);
 }
